@@ -1,0 +1,92 @@
+body {
+  background: #2a7b9b;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 53%,
+    rgba(237, 221, 83, 1) 100%
+  );
+}
+
+.bp {
+  background-position: center center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+  background-color: rgba(245, 245, 245, 0.459);
+  margin: 0 5px;
+  border-radius: 50%;
+  border: 2px dashed black;
+
+  &.rock {
+    background-image: url("imagens/rock.png");
+  }
+  &.paper {
+    background-image: url("imagens/paper.png");
+  }
+  &.scissors {
+    background-image: url("imagens/scissor.png");
+  }
+}
+
+.bp:hover {
+  cursor: crosshair;
+  box-shadow: 0px 0px 10px 5px black;
+  background-size: 80%;
+  background-color: rgba(245, 245, 245, 0.829);
+}
+
+.buttons {
+  display: block;
+  justify-items: center;
+  padding-bottom: 10px;
+  border: blue;
+}
+
+.message {
+  display: none;
+  justify-self: center;
+  padding: 0 20px;
+  padding-bottom: 10px;
+  border: 5px double black;
+  width: 150px;
+  text-align: center;
+  background-color: #62df96bd;
+}
+
+.message p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.finalScore {
+  display: none;
+  justify-self: center;
+  text-align: center;
+  margin-top: 50px;
+  padding: 0 15px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  background-color: #62df96bd;
+  border: 5px double black;
+}
+
+.btnContainer {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.btnRestart {
+  padding: 12px 22px;
+  font-size: 1.2rem;
+  background-color: #5fce3e;
+  color: white;
+  border: 1px solid #82e05c;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btnRestart:hover {
+  background-color: #8de972;
+}
